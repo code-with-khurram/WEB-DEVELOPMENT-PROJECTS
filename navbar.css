@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0F172A;
+}
+li{
+    list-style: none;
+    color: #F8FAFC;
+    
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+}
+a{
+    color: #F8FAFC;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #38BDF8;
+    padding: 8px 16px;
+    margin: 0 8px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+    animation: anime 0.8s ease-out;
+}
+nav {
+    border-radius: 10px;
+  animation: slideDown 0.8s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
